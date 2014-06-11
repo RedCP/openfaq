@@ -1,15 +1,15 @@
 <?php
 
 include('src/includes/config.php');
-include('src/includes/connect.php');
+include('src/includes/global/connect.php');
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title><? echo $title; ?></title>
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+	<meta name="keywords" content="<? echo $keywords; ?>">
+	<meta name="description" content="<? echo $description; ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Thomas, th0m.as"> <!-- Do NOT remove this! -->
 	<meta charset="utf-8">
@@ -18,6 +18,12 @@ include('src/includes/connect.php');
 	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700' rel='stylesheet' type='text/css'>
 	<link href="assets/img/openfaq.png" type="image/png" rel="icon"> <!-- Tab icon -->
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script> <!-- Load jQuery for fun! -->
+	<script>
+				function textAreaAdjust(o) {
+					o.style.height = "1px";
+					o.style.height = (25+o.scrollHeight)+"px";
+				}
+	</script>
 </head>
 <body>
 	<div class="sect1Cont">
@@ -30,8 +36,14 @@ include('src/includes/connect.php');
 		<div class="main">
 			<div class="content">
 				<form method="post" action="index.php">
-					<textarea class="ask" name="question" placeholder="What would you like to ask today?"></textarea>
+					<textarea class="ask" name="question" placeholder="What would you like to ask today?" onkeyup="textAreaAdjust(this)"></textarea>
 					<div class="tools">
+						<div class="anon">
+							<p class="c1-label"><input id="c1" type="checkbox" name="anon">Ask anonymously</p>
+						</div>
+						<div class="submitQ">
+							<input type="submit" name="submit" class="submit" value="Ask">
+						</div>
 					</div>
 				</form>
 			</div>
