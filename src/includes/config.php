@@ -5,6 +5,6 @@
 	$db = "openfaq"; // Do not change unless you modify database name
 	
 	$title = "OpenFAQ"; // You can change the title of your tab here
-	$keywords = "openfaq, th0m.as, thomas, redcp, sugarfruit studios, sugarfruit" // Meta keywords
-	$description = "OpenFAQ is a simple question-to-answer system written with PHP." // Meta description
+	$keywords = "openfaq, th0m.as, thomas, redcp, sugarfruit studios, sugarfruit"; // Meta keywords
+	$description = "OpenFAQ is a simple question-to-answer system written with PHP."; // Meta description
 ?>
