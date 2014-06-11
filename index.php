@@ -1,7 +1,7 @@
 <?php
 
 include('src/includes/config.php');
-include('src/includes/global/connect.php');
+include('src/includes/connect.php');
 
 ?>
 <!DOCTYPE html>
