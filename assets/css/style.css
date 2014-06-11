@@ -89,7 +89,9 @@ html, body {
 	width: 500px;
 	height: 75px;
 	border: 1px solid #ddd;
-	border-radius: 4px;
+	border-bottom: 0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 	padding: 10px;
 	color: #000;
 }
@@ -98,6 +100,71 @@ html, body {
 	color: #b5b5b5;
 	font-size: 15px;
 	font-family: sans-serif;
+}
+
+.tools {
+	margin-top: -1px;
+	border: 1px solid #ddd;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	width: 500px;
+	padding: 10px;
+	height: 10px;
+	background-color: #f8f8f8;
+}
+
+.anon {
+	float: left;
+	width: 300px;
+	height: 15px;
+	margin-top: -5px;
+}
+
+.c1-label {
+	font-size: 12px;
+	color: #000;
+	font-family: sans-serif;
+}
+
+.submitQ {
+	float: right;
+	margin-right: 25px;
+	width: 30px;
+	height: 15px;
+	margin-top: -8px;
+}
+
+.submit {
+	background-color: #f7f7f7;
+	color: #444;
+	text-shadow: 0 1px 0 #FFF;
+	border-radius: 4px;
+	width: 55px;
+	height: 25px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-bottom-color:rgba(0,0,0,0.3);
+	background-origin: border-box;
+	background-image: -webkit-linear-gradient(top,#fff,#eee);
+	background-image: linear-gradient(to bottom,#fff,#eee);
+	font-size: 10px;
+}
+
+.submit:hover, .submit:focus {
+	background-color: #fafafa;
+	color: #444;
+	outline: 0;
+	background-image: none;
+	cursor: pointer;
+}
+
+.submit:active {
+	background-color: #f5f5f5;
+	color: #444;
+	border-color: rgba(0,0,0,0.2);
+	border-top-color: rgba(0,0,0,0.3);
+	background-image: none;
+	box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+	cursor: pointer;
 }
 
 /* 4. Menu */
@@ -145,12 +212,12 @@ html, body {
 }
 
 .blue {
-  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#49CC2F), to(#3EB027));
-  	background: -webkit-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -moz-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -ms-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -o-linear-gradient(top, #49CC2F, #3EB027);
-	border: 1px solid #2E821D;
+  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00b7ea), to(#009ec3));
+  	background: -webkit-linear-gradient(top, #00b7ea, #009ec3);
+  	background: -moz-linear-gradient(top, #00b7ea, #009ec3);
+  	background: -ms-linear-gradient(top, #00b7ea, #009ec3);
+  	background: -o-linear-gradient(top, #00b7ea, #009ec3);
+	border: 1px solid #009ec3;
 	border-radius: 3px;
 	box-shadow: inset 0 1px 1px #FFF;
 	width: 220px;
@@ -165,12 +232,12 @@ html, body {
 }
 
 .red {
-  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#49CC2F), to(#3EB027));
-  	background: -webkit-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -moz-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -ms-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -o-linear-gradient(top, #49CC2F, #3EB027);
-	border: 1px solid #2E821D;
+  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff3019), to(#cf0404));
+  	background: -webkit-linear-gradient(top, #ff3019, #cf0404);
+  	background: -moz-linear-gradient(top, #ff3019, #cf0404);
+  	background: -ms-linear-gradient(top, #ff3019, #cf0404);
+  	background: -o-linear-gradient(top, #ff3019, #cf0404);
+	border: 1px solid #cf0404;
 	border-radius: 3px;
 	box-shadow: inset 0 1px 1px #FFF;
 	width: 220px;
@@ -185,12 +252,12 @@ html, body {
 }
 
 .yellow {
-  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#49CC2F), to(#3EB027));
-  	background: -webkit-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -moz-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -ms-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -o-linear-gradient(top, #49CC2F, #3EB027);
-	border: 1px solid #2E821D;
+  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffd65e), to(#febf04));
+  	background: -webkit-linear-gradient(top, #ffd65e, #febf04);
+  	background: -moz-linear-gradient(top, #ffd65e, #febf04);
+  	background: -ms-linear-gradient(top, #ffd65e, #febf04);
+  	background: -o-linear-gradient(top, #ffd65e, #febf04);
+	border: 1px solid #febf04;
 	border-radius: 3px;
 	box-shadow: inset 0 1px 1px #FFF;
 	width: 220px;
@@ -205,12 +272,12 @@ html, body {
 }
 
 .orange {
-  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#49CC2F), to(#3EB027));
-  	background: -webkit-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -moz-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -ms-linear-gradient(top, #49CC2F, #3EB027);
-  	background: -o-linear-gradient(top, #49CC2F, #3EB027);
-	border: 1px solid #2E821D;
+  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffa84c), to(#ff7b0d));
+  	background: -webkit-linear-gradient(top, #ffa84c, #ff7b0d);
+  	background: -moz-linear-gradient(top, #ffa84c, #ff7b0d);
+  	background: -ms-linear-gradient(top, #ffa84c, #ff7b0d);
+  	background: -o-linear-gradient(top, #ffa84c, #ff7b0d);
+	border: 1px solid #ff7b0d;
 	border-radius: 3px;
 	box-shadow: inset 0 1px 1px #FFF;
 	width: 220px;
